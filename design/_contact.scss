@@ -1,0 +1,35 @@
+.contact {
+  height: 100%;
+  padding-top: 40vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: 
+    linear-gradient(
+      to right,
+      rgba($primary-color, 0.2),
+      rgba($secondary-color, 0.2)
+    ),
+   url('../images/iammodel.jpg') center top;
+  background-position: center calc(50% - 300px) ;
+  background-size: cover;
+
+  h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  &_list {
+    display: flex;
+    // grid-template-columns: 1fr;
+    gap: 100px;
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  .social-icons {
+    position: initial;
+    margin-top: 2rem;
+  }
+}

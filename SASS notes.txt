@@ -1,0 +1,79 @@
+SASS - CSS with superpowers 
+Browser can't read sass --> compiled into regular css
+can use nodejs compiler/gulp/vs code extension -- Live sass compiler
+
+SYNTAX supported by sass
+- SCSS 
+	- sassy css
+	- superset of css (all valid css valid scss)
+- INDENTED 
+	- .sass
+	- same as scss but uses indentation in place of semicolons and brackets
+-modify the scss file, not css as everytime scss runs it overwrites css
+----------------------------------------------------------------------------------------------------
+VARIABLES
+- css var compatability : 90% across browser
+- scss var compatablity : 100% --> compiled into actual value not into css variable
+
+- Eg : CSS and SCSS same
+    :root {
+	--primary-color: x;
+	--accent-color:y;
+	--text-color:c;
+	}
+    body {
+	background: var(--primary-color);
+	}
+
+- Eg: Here scss has the var but when written in css actual value is assigned not variable
+     SCSS
+	$primary-color: x;
+	$accent-color:y;
+	$text-color:c;
+	
+    body {
+	background: $primary-color;
+	}
+
+      CSS
+	 body {
+	background: x;
+	}s
+------------------------------------------------------------------------------------------------------
+MAP - key value pair
+- Eg: SCSS
+	$font-weights:(
+		"regular":400,
+		"medium":500,
+		"bold":700
+		);
+
+	body {
+	font-weight:map-get($font-weights,bold);
+		}
+  	CSS
+	  body {
+		background: x;
+		font-weight: 700;
+		}
+----------------------------------------------------------------------------------------------------
+- NESTING can be done in scss and it'll be translated into css
+- partial scss files named with "_name.scss" can be created and imported as @import './name'
+- Functions can be created as @function 
+- MIXIN are like functions - @mixin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
